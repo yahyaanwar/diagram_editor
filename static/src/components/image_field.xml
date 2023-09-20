@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template">
+  <t owl="1" t-inherit="web.ImageField" t-inherit-mode="extension">
+    <xpath expr="//FileUploader" position="inside">
+      <t t-set-slot="toggler">
+        <button class="o_select_file_button btn btn-light border-0 rounded-circle m-1 p-1" data-tooltip="Upload" aria-label="Upload">
+          <i class="fa fa-upload fa-fw"/>
+        </button>
+      </t>
+      <button class="btn btn-light border-0 rounded-circle m-1 p-1"
+              data-tooltip="Edit" aria-label="Edit" t-on-click="_on_edit_diagram">
+        <i class="fa fa-pencil fa-fw"/>
+      </button>
+    </xpath>
+  </t>
+</templates>
